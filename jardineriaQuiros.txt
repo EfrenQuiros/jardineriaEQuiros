@@ -1,0 +1,6 @@
+Nombre de los clientes de la ciudad de Madrid que han realizado algun pedido,estado en que esta dicho pedido
+SELECT clientes.NombreCliente,pedidos.CodigoPedido,pedidos.Estado 
+FROM clientes
+JOIN pedidos
+ON clientes.CodigoCliente=pedidos.CodigoCliente
+WHERE clientes.ciudad = "Madrid";
